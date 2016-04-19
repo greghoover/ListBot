@@ -18,7 +18,7 @@ namespace ListBot.Lib
 		{
 		}
 
-		public async Task<string> SearchPcaChurchesByState(string stateCode)
+		public string SearchPcaChurchesByState(string stateCode)
 		{
 			string responseText = string.Empty;
 			using (var waiter = new WebBrowserWaiter.WebBrowserWaiter())

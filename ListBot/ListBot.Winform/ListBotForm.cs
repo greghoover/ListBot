@@ -18,10 +18,11 @@ namespace ListBot.Winform
 			InitializeComponent();
 		}
 
-		private async void buttonSubmitUrl_Click(object sender, EventArgs e)
+		private void buttonSubmitUrl_Click(object sender, EventArgs e)
 		{
 			var pca = new PCA();
-			var content = await pca.SearchPcaChurchesByState("PA");
+			//var content = await pca.SearchPcaChurchesByStateNoJavaScript("GA");
+			var content = pca.SearchPcaChurchesByState("PA");
 			textBoxResponse.Text = content;
 		}
 	}
